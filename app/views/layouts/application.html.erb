@@ -31,16 +31,14 @@
     </nav>
       
 
-    <hr>
-
     <% if notice.present? %>
-      <div style="color: green">
+      <div class="alert alert-success" role="alert">
         <%= notice %>
       </div>
     <% end %>
 
     <% if alert.present? %>
-      <div style="color: red">
+      <div class="alert alert-danger" role="alert">
         <%= alert %>
       </div>
     <% end %>
